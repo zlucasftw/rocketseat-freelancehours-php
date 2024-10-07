@@ -14,35 +14,7 @@ class WelcomeController extends Controller
     public function __invoke(Request $request)
     {
 
-        // $user = User::find(1);
-
-        // $user = User::query()->create([
-        //     'name' => 'Lucas',
-        //     'email' => 'lucas@email.com',
-        //     'password' => '123',
-        // ]);
-
-        // $user->email_verified_at = now();
-
-        // $user->save();
-
-        // $user->update(['email_verified_at' => now()]);
-
-        // $user->email_verified_at = now();
-
-        // $user->save();
-
-        // $user->update([
-        //     // 'id' => 10,
-        //     'email_verified_at' => now()->subMonths(10),
-        // ]);
-
-        // dd($user->email_verified_at->diffForHumans());
-
-        // Auth::login($user);
-        // Auth::logout();
-
-        return view('teste.jeremias');
+        return view('welcome');
 
     }
 }
