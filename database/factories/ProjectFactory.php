@@ -18,7 +18,6 @@ class ProjectFactory extends Factory
     public function definition(): array
     {
 
-
         return [
             'title' => collect(fake()->words(5))->join(' '),
             'description' => '',
@@ -27,5 +26,6 @@ class ProjectFactory extends Factory
             'tech_stack' => fake()->randomElements(['nodejs', 'react', 'javascript', 'vite', 'nextjs'], random_int(1, 5)),
             'created_by' => User::factory(),
         ];
+        
     }
 }
